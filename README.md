@@ -1,6 +1,6 @@
 # LifeFile: Your Health Story, Reimagined
 
-![LifeFile Dashboard](https://raw.githubusercontent.com/firebase/studio-seed-projects/main/health-nexus/lifefile-screenshot.png)
+![LifeFile Dashboard](/public/images/lifefile-dashboard.png)
 
 ## 🚀 The Problem: Fragmented & Confusing Health Records
 
@@ -17,6 +17,8 @@ LifeFile is a modern, patient-centric application that centralizes your medical 
 
 Our platform provides a secure, unified view of your medical history, empowered by AI to deliver personalized insights and proactive health alerts.
 
+![AI Insights](/public/images/lifefile-insights.png)
+
 ## 🔑 Key Features
 
 -   **Unified Patient Dashboard:** A clean, intuitive interface that provides a comprehensive overview of your health information, including medical history and key vitals.
@@ -26,41 +28,14 @@ Our platform provides a secure, unified view of your medical history, empowered 
 -   **Personalized Preventive Tips:** Receive actionable, AI-generated lifestyle and preventive tips tailored specifically to your identified health risks.
 -   **Secure Identity Verification:** A robust identity verification system that uses AI to analyze government-issued documents, ensuring your sensitive health information remains secure.
 
+![Identity Verification](/public/images/lifefile-verification.png)
+
 ## 💻 Tech Stack
 
 -   **Framework:** Next.js (with App Router)
 -   **UI:** React, ShadCN UI, Tailwind CSS
 -   **AI & Generative Features:** Google's Gemini models via Genkit
 -   **Deployment:** Firebase App Hosting
-
-## 🛠️ Getting Started
-
-To get a local copy up and running, follow these simple steps.
-
-### Prerequisites
-
--   Node.js (v18 or later)
--   npm
-
-### Installation
-
-1.  Clone the repo:
-    ```sh
-    git clone https://github.com/your-repo/lifefile.git
-    ```
-2.  Install NPM packages:
-    ```sh
-    npm install
-    ```
-3.  Set up your environment variables by creating a `.env` file in the root and adding your Gemini API Key:
-    ```
-    GEMINI_API_KEY=YOUR_API_KEY
-    ```
-4.  Run the development server:
-    ```sh
-    npm run dev
-    ```
-5.  Open [http://localhost:9002](http://localhost:9002) with your browser to see the result.
 
 ---
 
