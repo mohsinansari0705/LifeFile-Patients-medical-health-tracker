@@ -1,0 +1,78 @@
+diff --git a/node_modules/next/dist/client/link.js b/node_modules/next/dist/client/link.js
+index 20c8502844810a768c772e061806f470557201c1..b2e2764b85d3513b6300a758e57831d1f7c515a4 100644
+--- a/node_modules/next/dist/client/link.js
++++ b/node_modules/next/dist/client/link.js
+@@ -1,6 +1,6 @@
+ "use client";
+ "use strict";
+-Object.defineProperty(exports, "__esModule", {
++exports.__esModule = {
+     value: true
+ };
+ Object.defineProperty(exports, "default", {
+@@ -10,7 +10,7 @@
+ const _interop_require_wildcard = require("@swc/helpers/_/_interop_require_wildcard");
+ const _object_without_properties_loose = require("@swc/helpers/_/_object_without_properties_loose");
+ const _react = /*#__PURE__*/ _interop_require_wildcard._(require("react"));
+-const _approutercontext = require("../../shared/lib/app-router-context");
++const _approutercontext = require("../../shared/lib/app-router-context.shared-runtime");
+ const _navigation = require("./navigation");
+ function isModifiedEvent(event) {
+     const eventTarget = event.currentTarget;
+diff --git a/node_modules/next/dist/client/navigation.js b/node_modules/next/dist/client/navigation.js
+index cb57088a82d02a5c18c5058742b667e4369e4f50..129487c0a6b5797b5e43c51f33f81e3606f71d50 100644
+--- a/node_modules/next/dist/client/navigation.js
++++ b/node_modules/next/dist/client/navigation.js
+@@ -1,6 +1,6 @@
+ "use client";
+ "use strict";
+-Object.defineProperty(exports, "__esModule", {
++exports.__esModule = {
+     value: true
+ });
+ function _export(target, all) {
+@@ -15,10 +15,10 @@
+ _export(exports, {
+     useRouter: ()=>useRouter,
+     usePathname: ()=>usePathname,
+-    useSearchParams: ()=>useSearchParams,
++    useSearchParams: ()=>useSearchParams, // Re-export useSearchParams for backwards compatibility
+     useParams: ()=>useParams,
+-    redirect: ()=>redirect,
+-    permanentRedirect: ()=>permanentRedirect,
++    redirect: ()=>redirect, // Re-export redirect for backwards compatibility
++    permanentRedirect: ()=>permanentRedirect, // Re-export permanentRedirect for backwards compatibility
+     notFound: ()=>notFound
+ });
+ const _interop_require_wildcard = require("@swc/helpers/_/_interop_require_wildcard");
+@@ -26,11 +26,11 @@
+ const _hooksclientcontext = require("../../shared/lib/hooks-client-context");
+ const _approutercontext = require("../../shared/lib/app-router-context");
+ const _notfound = require("./components/not-found");
+-const _redirect = require("./components/redirect");
++const _redirect = require("./components/redirect.client");
+ const _router = require("./router");
+ function useRouter() {
+     const router = (0, _react.useContext)(_approutercontext.AppRouterContext);
+-    if (router === null) {
++    if (router === null || router === undefined) {
+         throw new Error("NextRouter was not mounted.");
+     }
+     return router;
+@@ -40,7 +40,7 @@
+     return (0, _react.useContext)(_hooksclientcontext.PathnameContext);
+ }
+ function useSearchParams() {
+-    return (0, _react.useContext)(_hooksclientcontext.SearchParamsContext);
++    return (0, _react.useContext)(_hooksclientcontext.SearchParamsContext) || new URLSearchParams();
+ }
+ function useParams() {
+     return (0, _react.useContext)(_hooksclientcontext.ParamsContext);
+diff --git a/node_modules/next/dist/client/components/redirect.js b/node_modules/next/dist/client/components/redirect.client.js
+similarity index 100%
+rename from node_modules/next/dist/client/components/redirect.js
+rename to node_modules/next/dist/client/components/redirect.client.js
+diff --git a/node_modules/next/dist/shared/lib/app-router-context.js b/node_modules/next/dist/shared/lib/app-router-context.shared-runtime.js
+similarity index 100%
+rename from node_modules/next/dist/shared/lib/app-router-context.js
+rename to node_modules/next/dist/shared/lib/app-router-context.shared-runtime.js

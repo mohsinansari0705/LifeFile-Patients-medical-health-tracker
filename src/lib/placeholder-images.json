@@ -1,0 +1,35 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "user-avatar",
+      "description": "A placeholder avatar for a user profile.",
+      "imageUrl": "https://picsum.photos/seed/1/150/150",
+      "imageHint": "portrait person"
+    },
+    {
+      "id": "x-ray-image",
+      "description": "A placeholder for a patient's x-ray image.",
+      "imageUrl": "https://picsum.photos/seed/2/600/800",
+      "imageHint": "x-ray medical"
+    },
+    {
+      "id": "blood-test-report",
+      "description": "A placeholder for a patient's blood test report.",
+      "imageUrl": "https://picsum.photos/seed/3/600/800",
+      "imageHint": "document report"
+    },
+    {
+      "id": "testimonial-1-avatar",
+      "description": "A placeholder avatar for a testimonial.",
+      "imageUrl": "https://picsum.photos/seed/4/100/100",
+      "imageHint": "portrait man"
+    },
+    {
+      "id": "testimonial-2-avatar",
+      "description": "A placeholder avatar for a testimonial.",
+      "imageUrl": "https://picsum.photos/seed/5/100/100",
+      "imageHint": "portrait woman"
+    }
+  ]
+}
