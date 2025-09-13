@@ -1,6 +1,6 @@
 # LifeFile: Your Health Story, Reimagined
 
-![LifeFile Dashboard](/public/images/lifefile-dashboard.png)
+![LifeFile Dashboard](https://github.com/mohsinansari0705/LifeFile-Patients-medical-health-tracker/blob/main/images/dashboard.png)
 
 ## 🚀 The Problem: Fragmented & Confusing Health Records
 
@@ -17,7 +17,7 @@ LifeFile is a modern, patient-centric application that centralizes your medical 
 
 Our platform provides a secure, unified view of your medical history, empowered by AI to deliver personalized insights and proactive health alerts.
 
-![AI Insights](/public/images/lifefile-insights.png)
+![AI Insights](https://github.com/mohsinansari0705/LifeFile-Patients-medical-health-tracker/blob/main/images/landing_page.png)
 
 ## 🔑 Key Features
 
@@ -28,7 +28,7 @@ Our platform provides a secure, unified view of your medical history, empowered 
 -   **Personalized Preventive Tips:** Receive actionable, AI-generated lifestyle and preventive tips tailored specifically to your identified health risks.
 -   **Secure Identity Verification:** A robust identity verification system that uses AI to analyze government-issued documents, ensuring your sensitive health information remains secure.
 
-![Identity Verification](/public/images/lifefile-verification.png)
+![Identity Verification](https://github.com/mohsinansari0705/LifeFile-Patients-medical-health-tracker/blob/main/images/profile.png)
 
 ## 💻 Tech Stack
 
